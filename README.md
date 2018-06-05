@@ -114,9 +114,9 @@ For more details, please refer to [Doxygen](https://sikang.github.io/jps3d).
 
 ## Run in Docker
 ```
-$ docker run -it --rm 7839930 /bin/bash
-root@3238e801981a:/# cd jps3d
-root@3238e801981a:/jps3d# ./build/test_planner_2d ./data/corridor.yaml
+$ docker run -it --rm icra2017/jps3d /bin/bash
+root@14d395347ffb:/# cd jps3d
+root@14d395347ffb:/jps3d# ./build/test_planner_2d ./data/corridor.yaml
 start: 2.5 -2
 goal:  35 2.5
 origin:  0 -5
