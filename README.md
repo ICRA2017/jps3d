@@ -112,7 +112,7 @@ To generate map in `yaml` format which can be loaded directly in the test node, 
 ## Doxygen
 For more details, please refer to [Doxygen](https://sikang.github.io/jps3d).
 
-### Run in Docker
+## Run in Docker
 ```
 $ docker run -it --rm 7839930 /bin/bash
 root@3238e801981a:/# cd jps3d
