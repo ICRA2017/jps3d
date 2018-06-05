@@ -21,7 +21,7 @@ ELSE()
   MESSAGE(FATAL_ERROR "Could not find yaml-cpp.")
 ENDIF()
 
-INCLUDE_DIRECTORIES(include ${EIGEN3_INCLUDE_DIRS})
+INCLUDE_DIRECTORIES(include /usr/include/eigen3)
 
 add_library(jps_lib src/graph_search.cpp
   src/planner_util.cpp)
