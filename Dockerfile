@@ -11,3 +11,5 @@ RUN cd jps3d && mkdir build && cd build \
   && cmake .. && make -j4
 
 RUN cd jps3d/build && make test
+
+CMD ["/jps3d/build/test_planner_2d", "/jps3d/data/corridor.yaml"]
