@@ -1,5 +1,5 @@
 # MRSL Jump Point Search Planning Library
-[[![Travis CI Build Status](https://travis-ci.org/ICRA2017/jps3d.svg?branch=reproducible)](https://travis-ci.org/ICRA2017/jps3d)
+[![Travis CI Build Status](https://travis-ci.org/ICRA2017/jps3d.svg?branch=reproducible)](https://travis-ci.org/ICRA2017/jps3d)
 - - -
 Jump Point Search for path planning in both 2D and 3D environments. Original jump point seach algorithm is proposed in ["D. Harabor and A. Grastien. Online Graph Pruning for Pathfinding on Grid Maps. In National Conference on Artificial Intelligence (AAAI), 2011"](https://www.aaai.org/ocs/index.php/AAAI/AAAI11/paper/download/3761/4007). The 3D version is proposed in ["S. Liu, M. Watterson, K. Mohta, K. Sun, S. Bhattacharya, C.J. Taylor and V. Kumar. Planning Dynamically Feasible Trajectories for Quadrotors using Safe Flight Corridors in 3-D Complex Environments. ICRA 2017"](http://ieeexplore.ieee.org/abstract/document/7839930/). 
 
