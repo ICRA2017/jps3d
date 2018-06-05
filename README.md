@@ -1,5 +1,6 @@
 # MRSL Jump Point Search Planning Library
 [![Travis CI Build Status](https://travis-ci.org/ICRA2017/jps3d.svg?branch=reproducible)](https://travis-ci.org/ICRA2017/jps3d)
+[![Docker Build Status](https://dockerbuildbadges.quelltext.eu/status.svg?organization=icra2017&repository=jps3d)](https://hub.docker.com/r/icra2017/jps3d/builds/) 
 - - -
 Jump Point Search for path planning in both 2D and 3D environments. Original jump point seach algorithm is proposed in ["D. Harabor and A. Grastien. Online Graph Pruning for Pathfinding on Grid Maps. In National Conference on Artificial Intelligence (AAAI), 2011"](https://www.aaai.org/ocs/index.php/AAAI/AAAI11/paper/download/3761/4007). The 3D version is proposed in ["S. Liu, M. Watterson, K. Mohta, K. Sun, S. Bhattacharya, C.J. Taylor and V. Kumar. Planning Dynamically Feasible Trajectories for Quadrotors using Safe Flight Corridors in 3-D Complex Environments. ICRA 2017"](http://ieeexplore.ieee.org/abstract/document/7839930/). 
 
@@ -111,3 +112,19 @@ To generate map in `yaml` format which can be loaded directly in the test node, 
 ## Doxygen
 For more details, please refer to [Doxygen](https://sikang.github.io/jps3d).
 
+### Run in Docker
+```
+$ docker run -it --rm 7839930 /bin/bash
+root@3238e801981a:/# cd jps3d
+root@3238e801981a:/jps3d# ./build/test_planner_2d ./data/corridor.yaml
+start: 2.5 -2
+goal:  35 2.5
+origin:  0 -5
+dim: 799 199
+resolution: 0.05
+JPS Planner takes: 4.000000 ms
+JPS Path Distance: 35.109545
+JPS Planner takes: 4.000000 ms
+AStar Planner takes: 63.000000 ms
+AStar Path Distance: 35.109545
+```
